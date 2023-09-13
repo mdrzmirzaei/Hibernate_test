@@ -1,11 +1,7 @@
 package org.hbn;
 
-import java.util.List;
-import java.util.Date;
-import java.util.Iterator;
 
 import org.hbn.entity.Employee;
-import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.boot.Metadata;
