@@ -11,8 +11,11 @@ import org.hibernate.service.ServiceRegistry;
 public class Main {
 
     public static void main(String[] args) {
-
-
+if (ncValidate.validate("006926451".trim()))
+    System.out.println("your nationalCode is valid");
+else
+    System.out.println("your nationalCode is not valid !!!");
+/*
         Employee e = new Employee("saeed", "mirzaei", "0078535174");
         Configuration con = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(Employee.class);
         ServiceRegistry standardServiceRegistry = new StandardServiceRegistryBuilder().applySettings(con.getProperties()).build();
@@ -23,6 +26,8 @@ public class Main {
         tx.commit();
         session.close();
         System.out.println("this is complete add in database");
+
+ */
     }
 
 
